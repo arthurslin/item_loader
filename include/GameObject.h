@@ -23,15 +23,19 @@ class GameObject {
 		std::string id;
 		std::string name;
 		std::string description;
+		bool takeable;
+		bool moveable;
 
 	public:
 
-		GameObject() : id(""), name(""), description("") {}
+		GameObject() : id(""), name(""), description(""), {}
 
-		GameObject(const std::string & id_, const std::string & name_, const std::string & description_) {
+		GameObject(const std::string & id_, const std::string & name_, const std::string & description_, bool takeable_, bool moveable_) {
 			id = id_;
 			name = name_;
 			description = description_;
+			moveable = moveable_;
+			takeable = takeable_;
 		}
 
 		virtual bool from_json(const std::string & filename, picojson::object & obj); 
