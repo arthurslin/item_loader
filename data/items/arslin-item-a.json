@@ -2,5 +2,7 @@
 	"Type" : "Item",
 	"Id" : "arslin-item-a",
 	"Name" : "Arthur's magic sword",
-	"Description" : "A magic sword made from unicorns and butterflies.  On closer examination, it looks somewhat like a C++ template!"
+	"Description" : "A magic sword made from unicorns and butterflies.  On closer examination, it looks somewhat like a C++ template!",
+	"Takeable" : "True",
+	"Moveable" : "True"
 }

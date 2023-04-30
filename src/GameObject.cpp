@@ -23,12 +23,12 @@ bool GameObject::from_json(const std::string & filename, picojson::object & obj)
         }
 
         if (!has_field<std::string>(obj, "Takeable")) {
-                std::cerr << "filename : " << filename << " does not contain a Description property (or it is not a string)" << std::endl;
+                std::cerr << "filename : " << filename << " does not contain a Takeable property (or it is not a string)" << std::endl;
                 return false;
         }
 
         if (!has_field<std::string>(obj, "Moveable")) {
-                std::cerr << "filename : " << filename << " does not contain a Description property (or it is not a string)" << std::endl;
+                std::cerr << "filename : " << filename << " does not contain a Moveable property (or it is not a string)" << std::endl;
                 return false;
         }
 

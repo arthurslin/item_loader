@@ -28,7 +28,7 @@ class GameObject {
 
 	public:
 
-		GameObject() : id(""), name(""), description("") {}
+		GameObject() : id(""), name(""), description(""), takeable(), moveable() {}
 
 		GameObject(const std::string & id_, const std::string & name_, const std::string & description_, bool takeable_, bool moveable_) {
 			id = id_;
